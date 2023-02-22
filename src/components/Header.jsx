@@ -17,7 +17,7 @@ const App = () => {
     >
       <ReactNavbar
         color="#191919"
-        logo="https://www.svgrepo.com/show/449587/headphones.svg"
+        logo="https://raw.githubusercontent.com/ss23094527/Listening/261b6b78b8be9778ff7579525f10a7d0f0edecbc/public/images/logo.svg"
         
         menu={[
           { name: "HOME", to: "/", component: Home },
