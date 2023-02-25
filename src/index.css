@@ -5,7 +5,7 @@
 @font-face {
   font-family: '123';
   src: local("123"),
-      url('./public/fonts/123.TTC') format("woff");
+      url('/fonts/123.TTC') format("woff");
 }
 
 body{
