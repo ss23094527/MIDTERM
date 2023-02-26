@@ -1,0 +1,105 @@
+
+
+#textblock {
+  width: 100%;
+  position: relative;
+    background-color: #181850;
+    height: 300vh;
+  }
+  
+  #textblock-container {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  
+  #textblock-title {
+    color: #d5d5d3;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Helvetica Neue";
+  }
+  
+  #textblock-content {
+    color: #f2f0ed;
+    font-size: 20px;
+  }
+  
+
+  
+  .animation, .animation_layer {
+      height: 900px;
+  }
+  
+  .animation {
+    display: block;
+      position: relative;
+      z-index: 1;
+  }
+  
+  @media screen and (max-width:376px){
+    .animation_layer {
+      background-size: 100% 50%;
+    }
+ }
+
+ .para-container {
+ 
+  width: 100%;
+}
+
+/* @media (max-width: 375px) {
+  .animation_layer {
+    
+    
+      
+  }
+} */
+
+
+  .animation_layer {
+      background-position: top center;
+    
+      
+      background-size: 100% 70%;
+      background-repeat: repeat-x;
+      
+      width: 100%;
+      position: absolute;
+  }
+  .animation_layer.parallax {
+      position: fixed;
+  }
+  
+  #artback {
+    background-image: url(./images/background.png);
+  }
+  
+  #mountain {
+    background-image: url(./images/night1.png);
+  }
+  
+  #logoland {
+    background-image: url(./images/night2.png);
+  }
+  
+  #jungle1 {
+    background-image: url(./images/night3.png);
+  }
+  
+  #jungle2 {
+    background-image: url(./images/night4.png);
+  }
+  
+  #jungle3 {
+    background-image: url(./images/night5.png);
+  }
+  
+  #jungle4 {
+    background-image: url(./images/night6.png);
+  }
+  
+  #jungle5 {
+    background-image: url(./images/night7.png);
+  }
+  

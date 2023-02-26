@@ -1,59 +1,88 @@
-import React from "react";
-import { ReactNavbar } from "react-responsive-animate-navbar";
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import './styles/Headerstyle.css';
+import '../pages/Home';
+import Darklight from './darklightmode/Darklight';
+import { Link } from 'react-router-dom';
 
 
-const App = () => {
-  const Home = () => <h1>home</h1>;
-  const Articles = () => <h1>Articles</h1>;
-  const Contact = () => <h1>Contact</h1>;
-  const About = () => <h1>About</h1>;
 
-  
-
+function Header() {
   return (
-    
-    <div
-      style={{ backgroundColor: "#202020", minHeight: "100vh", width: "100%" }}
-    >
-      <ReactNavbar
-        color="#191919"
-        logo="https://raw.githubusercontent.com/ss23094527/Listening/ae50434839e57e952c43384ee99304aabae36950/public/images/logo.svg"
-        
-        menu={[
-          { name: "HOME", to: "/", component: Home },
-          { name: "ARTICLES", to: "/articles", component: Articles },
-          { name: "ABOUT US", to: "/about", component: About },
-          { name: "CONTACT", to: "/contact" },
-        ]}
-        social={[
-          {
-            name: "Linkedin",
-            url: "https://www.linkedin.com/in/nazeh-taha/",
-            icon: ["fab", "linkedin-in"],
-          },
-          {
-            name: "Facebook",
-            url: "https://www.facebook.com/nazeh200/",
-            icon: ["fab", "facebook-f"],
-          },
-          {
-            name: "Instagram",
-            url: "https://www.instagram.com/nazeh_taha/",
-            icon: ["fab", "instagram"],
-          },
-          {
-            name: "Twitter",
-            url: "http://nazehtaha.herokuapp.com/",
-            icon: ["fab", "twitter"],
-          },
-        ]}
-        sticky
-      />
-    </div>
-    
+    <>
+
+      {['sm',].map((expand) => (
+
+        <Navbar className="p-3 navbarr" key={expand} variant="dark" expand={expand} >
+          <Container fluid>
+
+   
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Menu
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                {/* 搜尋 */}
+                {/* <Form className="d-flex navlink">
+
+                  <Form.Control
+                  
+                    type="search"
+                    placeholder="Search"
+                    className="me-2 searchbar"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-light me-2">Search</Button>
+                </Form> */}
+
+                <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
+                  <Nav.Link className='text-white' href="/Home">HOME</Nav.Link>
+                  <Nav.Link href="/Aboutus">ABOUT US</Nav.Link>
+
+                  {/* 下拉菜單 */}
+                  <NavDropdown
+
+                    title="TYPE"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item href="#action3">MUSIC</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      3D MODEL
+                    </NavDropdown.Item>
+
+                    <NavDropdown.Item href="#action5">
+                      ART WORK
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link href="/Aboutus">SHOP</Nav.Link>
+
+                </Nav>
+
+                <Nav className="me-3 gap-2 login">
+                  <Nav.Link className="btn btn-outline-light text-white" href="#">LOGIN</Nav.Link>
+                  <Nav.Link eventKey={2} className="btn btn-outline-light text-white " href="#">
+                    SIGN UP
+                  </Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </>
   );
-};
+}
 
-
-
-export default App;
+export default Header;

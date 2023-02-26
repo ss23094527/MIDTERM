@@ -1,24 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-@font-face {
-  font-family: '123';
-  src: local("123"),
-      url('./public/fonts/123.TTC') format("woff");
-}
 
-body{
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   background-color: rgb(20, 21, 24);
 }
 
-.bg-color{
+.bg-color {
   background-color: rgb(36, 36, 41);
 }
-html
-{
-  cursor: url(https://cur.cursors-4u.net/games/gam-10/gam987.ani), url(https://cur.cursors-4u.net/games/gam-10/gam987.png), auto !important;} /*
+
+html {
+ 
+  cursor: url(https://cur.cursors-4u.net/games/gam-10/gam987.ani), url(https://cur.cursors-4u.net/games/gam-10/gam987.png), auto !important;
+}
+
+/*
 
 
 
@@ -58,7 +56,7 @@ html
 }
 
 @keyframes typing {
- 
+
   from {
 
     width: 0.4ch;
@@ -80,118 +78,273 @@ html
     border-color: transparent
   }
 }
+
 /*----------bootstrap-navbar-css------------*/
 
-/*ham*/
 
-.ham {
-width: 50px;
-cursor: pointer;
--webkit-tap-highlight-color: transparent;
-transition: transform 400ms;
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-user-select: none;
-border-style: none;
-display: none;
+/*首頁內容*/
+.Homecontent {
+
+ 
 }
 
-@media (max-width:990px) {
-.ham {
-  display: block;
-}
-
-}
-
-
-
-.hamRotate.active {
-transform: rotate(45deg);
-}
-
-.hamRotate180.active {
-transform: rotate(180deg);
-}
-
-.line {
-fill: none;
-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-stroke: rgb(255, 255, 255);
-stroke-width: 5.0;
-stroke-linecap: round;
-}
-
-.ham1 .top {
-stroke-dasharray: 40 139;
-}
-
-.ham1 .bottom {
-stroke-dasharray: 40 180;
-}
-
-.ham1.active .top {
-stroke-dashoffset: -98px;
-}
-
-.ham1.active .bottom {
-stroke-dashoffset: -138px;
-}
-
-
-.navbar-mainbg{
-background-image: linear-gradient(to bottom, rgb(23, 23, 23) 30%, transparent 80%), 
-  linear-gradient(to bottom, rgba(31, 34, 41, 0.989), transparent 600%);
-padding: 0px;
-}
-
-.item-1{
-font-weight: 600;
-}
-
-
-
-#navbarSupportedContent{
-overflow: hidden;
-position: relative;
-}
-#navbarSupportedContent ul{
-padding: 0px;
-margin: 0px;
-}
-
-#navbarSupportedContent li {
-list-style-type: none;
-float: center;
-}
-
-
-#navbarSupportedContent ul li a{
-  
-  top: 5px;
-  letter-spacing:5px;
-  white-space:nowrap;
-color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-family: '123';
-  display: block;
-
-  transition-duration:0.6s;
-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+/*layout*/
+.layout-footer{
+top: 1000px;
+  z-index: 999;
+  height: 200px;
   position: relative;
+  background-color: rgb(240, 239, 239);
 }
 
-
-.nav-item  :hover{
-transition: 0.5s;
- 
- 
+.layout-header {
+  width: 100%;
+  z-index: 999;
 }
+
+.layout-content {
+
+}
+
+.main-layout {
+  width: 100%;
+}
+
 
 /*footer*/
+h4{
+  font-family: monospace;
+  font-size: 1.5rem;
+}
 
-.footer-text{
-  font-family: '123';
-  font-size: 10px;
+.atn-layout {
+  background: #fff;
+}
+
+.layout-footer{
+  background: #fff;
+  margin-top:4rem;
+  padding:0px;
+  width: 100%;
+  padding: 0;
+}
+.footer{
+  width:100%;
+  margin: 0;
+}
+.footer-container{
+  width: 100%;
+}
+/* footer up */
+.footer-up{
+  display: flex;
+  background-color: #2a2a29;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.subscribe{
+  margin-right: 0px;
+  width:65%;
+}
+
+.subscribe-title{
+  color:#fff;
+  margin: 0;
+  font-family: monospace;
+}
+
+.subscribe-subtitle{
+  color:#333435;
+  
+  margin: 0;
+}
+
+.subscribe-box{
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe-email {
+  width: 80%;
+}
+
+.subscribe-box input#search{
+  width: 100%;
+  height: 3rem;
+  background: #fff;
+  border: none;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.subscribe-btn{
+  border: none;
+  background: #5c5f63;
+  height:3rem;
+  width: 100%;
+  color: #fff;
+  border-radius: 0.3rem;
+}
+
+.div-subscribe-btn {
+  text-align: center;
+  width: 20%;
+}
+/* footer down */
+.footer-down {
+  background-color: #eeeeee;
+  width: 100%;
+  display: flex;
+
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+footer .icons {
+  width: 50%;
+  margin-top: 1rem;
+}
+/* left area */
+.your-home {
+  width: 100%;
+  margin: 0;
+  color: #3e3d39;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-icon{
+  width: 1.5rem;
+  height:1.5rem;
+  margin-right: 2rem;
+}
+/* right area */
+.footer-down-right{
+  display: flex;
+  flex-direction: row;
+}
+
+.icons li{
+  list-style-type: none;
+  padding: 2px; 
+}
+
+.icons li :hover{
+  color: #565450;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-about{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 1rem;
+  padding: 2px;
+}
+
+.footer-help{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 1rem;
+  padding: 2px;
+}
+
+.footer-shop{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 1rem;
+  padding: 2px;
+}
+
+.options-title {
+  color: #464542;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.options {
+  color: #426393;
+}
+
+.footer-line {
+  margin: 2rem auto 30px;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  border-top: solid 2px;
+  border-color: #FFC72D;
+  opacity: 1;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: #FFC72D;
+}
+
+@media (max-width: 768px) {
+  .footer-down-right{
+    flex-direction: column;
+  }
+  .footer-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .subscribe {
+    width: 80%;
+  }
+  .subscribe-box {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.6rem;
+  }
+  .subscribe-email {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  footer .icons{
+    width: 100%;
+  }
+  .footer-down {
+    width: 80%;
+  }
+  .footer-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-about{
+    width: 50%;
+  }
+  .footer-help{
+    width: 50%;
+  }
+  .footer-shop{
+    width: 50%;
+  }
+  .div-subscribe-btn {
+    width: 35%;
+  }
 }

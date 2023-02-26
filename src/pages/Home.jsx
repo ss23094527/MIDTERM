@@ -1,14 +1,27 @@
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import HomeContent from "../components/Homecontent/HomeContent";
+import '.././index.css';
 
-function Home(){
-    return(
+function Home() {
+    return (
+        <div className="main-layout">
 
-        <div className="bg-color">
-            
+            <div className="layout-header">
                 <Header />
-                <Footer />
-            
+              
+                <div className="layout-content">
+                    <HomeContent />
+                </div>
+
+                {/* <div className="layout-footer">
+                    <div />
+                    <Footer />
+                </div> */}
+                
+
+            </div>
         </div>
     );
 }
