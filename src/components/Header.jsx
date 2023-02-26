@@ -9,6 +9,7 @@ import './styles/Headerstyle.css';
 import '../pages/Home';
 import Darklight from './darklightmode/Darklight';
 import { Link } from 'react-router-dom';
+import { NavbarBrand } from 'react-bootstrap';
 
 
 
@@ -20,8 +21,16 @@ function Header() {
 
         <Navbar className="p-3 navbarr" key={expand} variant="dark" expand={expand} >
           <Container fluid>
-
-   
+            <Navbar.Brand href="#home">
+              <img
+                alt=""
+                src="./public/images/logo.svg"
+                width="0"
+                height="0"
+                className="d-inline-block align-top"
+              />{' '}
+             
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-spring/parallax": "^9.6.1",
     "@react-spring/web": "^9.6.1",
-    "antd": "^3.19.2",
+    "antd": "^5.2.2",
     "bootstrap": "^5.2.3",
     "cdbreact": "^1.5.8",
     "mdb-react-ui-kit": "^5.1.0",
@@ -20,7 +20,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-pro-sidebar": "^1.0.0",
-    "react-responsive-animate-navbar": "^1.1.8",
+    "react-responsive-animate-navbar": "^1.0.3",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
     "react-spring": "^9.6.1",

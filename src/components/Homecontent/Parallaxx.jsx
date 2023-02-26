@@ -7,7 +7,7 @@ import Footer from '../Footer';
 function Parallaxx() {
   return (
     <div className="container ">
-      
+
       <Parallax pages={3} style={{ top: '-5px', left: '0' }} class="animation pparallax">
         <ParallaxLayer offset={0} speed={0}>
           <div class="animation_layer parallax" id="artback"></div>
@@ -34,18 +34,18 @@ function Parallaxx() {
           <div class="animation_layer parallax" id="manonmountain"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={-0.2}>
-          <div class="animation_layer parallax" id="jungle5"></div>
+          <div class="animation_layer parallax" id="jungle5">
+          </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.05}>
           <TextBlock />
-         
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={0.05}>
           <Footer />
-         
+
         </ParallaxLayer>
       </Parallax>
-      
+
     </div>
   );
 }

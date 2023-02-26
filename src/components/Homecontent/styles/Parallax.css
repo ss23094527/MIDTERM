@@ -9,15 +9,16 @@
   
   #textblock-container {
     width: 65%;
+  
     margin: 0 auto;
     padding-top: 70px;
   }
   
   #textblock-title {
     color: #d5d5d3;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 600;
-    font-family: "Helvetica Neue";
+    font-family: "123";
   }
   
   #textblock-content {
@@ -28,6 +29,7 @@
 
   
   .animation, .animation_layer {
+ 
       height: 900px;
   }
   
@@ -36,25 +38,35 @@
       position: relative;
       z-index: 1;
   }
-  
-  @media screen and (max-width:376px){
-    .animation_layer {
-      background-size: 100% 50%;
-    }
- }
 
- .para-container {
- 
-  width: 100%;
+@media (max-width: 768px) {
+  .animation_layer.parallax{
+    background-size: 120% auto;
+    height: 460px;
+  }
+  #textblock-container {
+    margin-top: -80%;
+  }
 }
 
-/* @media (max-width: 375px) {
-  .animation_layer {
-    
-    
-      
+  
+@media (max-width:376px){
+  .animation_layer.parallax{
+    background-size: 120% 60%;
+  
   }
-} */
+  #textblock-container {
+    margin-top: -115%;
+  }
+  #textblock-title {
+    font-size: 15px;
+  }
+  #textblock-content {
+    font-size: 10px;
+  }
+}
+
+
 
 
   .animation_layer {
@@ -65,10 +77,10 @@
       background-repeat: repeat-x;
       
       width: 100%;
-      position: absolute;
+      
   }
   .animation_layer.parallax {
-      position: fixed;
+      position: relative;
   }
   
   #artback {
