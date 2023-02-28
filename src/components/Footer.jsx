@@ -1,3 +1,5 @@
+import './styles/Footerstyle.css';
+
 export default function Footer(){
     return(
         <footer className="footer">
@@ -19,7 +21,7 @@ export default function Footer(){
             <div className=" footer-container" style={{ display:"flex", justifyContent:"center"}}>
                 <div className="footer-down">
                         <div className="your-home footer-container">
-                            <h4 className="header-title" style={{ margin:"0" }}>Your Home</h4>
+                            <h4 className="header-title" style={{ margin:"0" }}>TRANCE</h4>
                             <p className="header-title">have a nice day.</p>   
 
                         </div>
@@ -59,7 +61,7 @@ export default function Footer(){
                         </div>
                         <div style={{ width:"100%", display:"flex", justifyContent:"center", flexDirection:"column" }}>
                             <hr className=" footer-line "/> 
-                            <p className=" copyright ">© 2021 Your Home. All Rights Reserved.</p>
+                            <p className=" copyright ">Copyright © 2023 TRANCE All Rights Reserved.</p>
                         </div>
 
 

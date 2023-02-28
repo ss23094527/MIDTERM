@@ -1,0 +1,244 @@
+/*footer*/
+h4{
+    font-family: '123';
+    font-size: 1.5rem;
+  }
+  
+  .atn-layout {
+    background: #fff;
+  }
+  
+  .layout-footer{
+    background: #fff;
+    margin-top:4rem;
+    padding:0px;
+    width: 100%;
+    padding: 0;
+  }
+  .footer{
+    width:100%;
+    margin: 0;
+  }
+  .footer-container{
+    width: 100%;
+  }
+  /* footer up */
+  .footer-up{
+    display: flex;
+    background-color: #1f1f54;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .subscribe{
+    
+    margin-right: 0px;
+    width:65%;
+  }
+  
+  .subscribe-title{
+    font-family: '123';
+    color:#fff;
+    margin: 0;
+    
+  }
+  
+  .subscribe-subtitle{
+    color:#ffffff;
+    
+    margin: 0;
+  }
+  
+  .subscribe-box{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .subscribe-email {
+    width: 80%;
+  }
+  
+  .subscribe-box input#search{
+    width: 100%;
+    height: 3rem;
+    background: #fff;
+    border: none;
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+  }
+  
+  .subscribe-btn{
+    border: none;
+    background: #6a7b92;
+    height:3rem;
+    width: 100%;
+    color: #fff;
+    border-radius: 0.3rem;
+  }
+  
+  .div-subscribe-btn {
+    text-align: center;
+    width: 20%;
+  }
+  /* footer down */
+  .footer-down {
+    background-color: #1f1f54;
+    width: 100%;
+    display: flex;
+  
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  footer .icons {
+    width: 50%;
+    padding-left: 18%;
+    margin-top: 1rem;
+  }
+  /* left area */
+  .your-home {
+    margin-left: 18%;
+    width: 100%;
+ 
+    color: #fefefe;
+    font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
+  }
+  
+  .footer-icon{
+    width: 1.5rem;
+    height:1.5rem;
+   
+    margin-right: 2rem;
+  }
+  /* right area */
+  .footer-down-right{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .icons li{
+    list-style-type: none;
+    padding: 2px; 
+  }
+  
+  .icons li :hover{
+    color: #b4acd8;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-about{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 0.4rem;
+    padding: 2px;
+  }
+  
+  .footer-help{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 1rem;
+    padding: 2px;
+  }
+  
+  .footer-shop{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 1rem;
+    padding: 2px;
+  }
+  
+  .options-title {
+    color: #fbfaf9;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .options {
+    color: #8496b1;
+  }
+  
+  .footer-line {
+    margin: 2rem auto 30px;
+    padding: 0;
+    width: 100%;
+    border: 0;
+    border-top: solid 1px;
+    border-color: #ffffff;
+    opacity: 1;
+  }
+  
+  .copyright {
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    color: #fffffe;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-down-right{
+      flex-direction: column;
+    }
+    .footer-icon {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .subscribe {
+      width: 80%;
+    }
+    .subscribe-box {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 0.6rem;
+    }
+    .subscribe-email {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    footer .icons{
+      width: 100%;
+    }
+    .footer-down {
+      width: 80%;
+    }
+    .footer-options {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer-about{
+      width: 50%;
+    }
+    .footer-help{
+      width: 50%;
+    }
+    .footer-shop{
+      width: 50%;
+    }
+    .div-subscribe-btn {
+      width: 35%;
+    }
+  }
+  

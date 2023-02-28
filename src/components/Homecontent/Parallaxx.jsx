@@ -8,7 +8,7 @@ function Parallaxx() {
   return (
     <div className="container ">
 
-      <Parallax pages={3} style={{ top: '-5px', left: '0' }} class="animation pparallax">
+      <Parallax pages={6} style={{ top: '-5px', left: '0' }} class="animation pparallax">
         <ParallaxLayer offset={0} speed={0}>
           <div class="animation_layer parallax" id="artback"></div>
         </ParallaxLayer>
@@ -40,7 +40,7 @@ function Parallaxx() {
         <ParallaxLayer offset={1} speed={0.05}>
           <TextBlock />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0.05}>
+        <ParallaxLayer offset={5} speed={0.05}>
           <Footer />
 
         </ParallaxLayer>

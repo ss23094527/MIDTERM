@@ -11,6 +11,8 @@
   "dependencies": {
     "@react-spring/parallax": "^9.6.1",
     "@react-spring/web": "^9.6.1",
+    "@react-three/drei": "^9.56.28",
+    "@react-three/fiber": "^8.11.5",
     "antd": "^5.2.2",
     "bootstrap": "^5.2.3",
     "cdbreact": "^1.5.8",
