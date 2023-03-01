@@ -2439,6 +2439,11 @@
     "tiny-invariant" "^1.0.2"
     "tiny-warning" "^1.0.0"
 
+"react-scroll-to-top@^3.0.0":
+  "integrity" "sha512-I/k45Ujai097du59tHBbzGxN7Lyc6K8Uc3IChq6HMXaBfB8N/rrfm055T5Yv0DWfVpf6pOFaBmhD3LOfH5unGw=="
+  "resolved" "https://registry.npmjs.org/react-scroll-to-top/-/react-scroll-to-top-3.0.0.tgz"
+  "version" "3.0.0"
+
 "react-scroll@^1.8.1":
   "integrity" "sha512-9m7ztraiX/l6L7erzYAD3fhnveNckei6/NkWfqwN2e0FRdoE2W6Pk4oi2Nah7mWpPCPAeIgegfaqZACTimPOwg=="
   "resolved" "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.9.tgz"

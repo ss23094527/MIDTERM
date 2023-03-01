@@ -25,6 +25,7 @@
     "react-responsive-animate-navbar": "^1.0.3",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
+    "react-scroll-to-top": "^3.0.0",
     "react-spring": "^9.6.1",
     "react-switch": "^7.0.0",
     "startbootstrap-simple-sidebar": "^6.0.5",

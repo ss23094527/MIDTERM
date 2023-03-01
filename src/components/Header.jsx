@@ -1,4 +1,4 @@
-import Button from 'react-bootstrap/Button';
+
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -7,9 +7,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './styles/Headerstyle.css';
 import '../pages/Home';
-import Darklight from './darklightmode/Darklight';
 import { Link } from 'react-router-dom';
 import { NavbarBrand } from 'react-bootstrap';
+import Search from './Searchbar';
 
 
 
@@ -29,7 +29,7 @@ function Header() {
                 height="0"
                 className="d-inline-block align-top"
               />{' '}
-             
+
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -44,17 +44,7 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 {/* 搜尋 */}
-                {/* <Form className="d-flex navlink">
-
-                  <Form.Control
-                  
-                    type="search"
-                    placeholder="Search"
-                    className="me-2 searchbar"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-light me-2">Search</Button>
-                </Form> */}
+                {/* <Search /> */}
 
                 <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
                   <Nav.Link className='text-white' href="/Home">HOME</Nav.Link>

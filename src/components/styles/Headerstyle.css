@@ -1,8 +1,8 @@
 @font-face {
     font-family: '123';
     src: local("123"),
-      url('./public/fonts/1.OTF') format("woff");
-  }
+        url('./public/fonts/1.OTF') format("woff");
+}
 
 .navlink {
     font-weight: 800;
@@ -10,23 +10,23 @@
     font-family: "123";
     letter-spacing: 0.3rem;
     opacity: 1;
-   
+
 }
 
-.model-viewer{
-position: relative;
+.model-viewer {
+    position: relative;
 }
 
-.login{
+.login {
     font-family: "123";
-   font-size: 12px;
+    font-size: 12px;
     color: #ffffff;
     height: 30px;
     letter-spacing: 0.3rem;
     text-align: center;
 }
 
-.login :hover{
+.login :hover {
     background-color: rgb(209, 181, 255);
 }
 
@@ -48,4 +48,37 @@ position: relative;
     z-index: 999;
 }
 
-.searchbar {}
+/*searchbar*/
+
+.visually-hidden {
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+}
+
+#header-search {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #927e7e;
+    width: 55%;
+   
+    border: none;
+    background-color: #ffffffe7;
+}
+
+.searchbt{
+    
+    border-width: 1.5px;
+      font-family:monospace;
+      color: #ffffff;
+      background-color: rgba(164, 154, 255, 0.628);
+      border-color: #ffffff;
+      
+  }
+
+  

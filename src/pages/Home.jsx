@@ -4,13 +4,15 @@ import Footer from "../components/Footer";
 import HomeContent from "../components/Homecontent/HomeContent";
 import '.././index.css';
 
+
 function Home() {
     return (
+       
         <div className="main-layout">
-
+            
             <div className="layout-header">
                 <Header />
-              
+
                 <div className="layout-content">
                     <HomeContent />
                 </div>
@@ -19,7 +21,7 @@ function Home() {
                     <div />
                     <Footer />
                 </div> */}
-                
+
 
             </div>
         </div>
